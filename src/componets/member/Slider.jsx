@@ -1,5 +1,5 @@
 import { Box, Button, Typography } from '@mui/material';
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -36,17 +36,17 @@ function Slider(props) {
                 onAutoplayTimeLeft={onAutoplayTimeLeft}
                 className="mySwiper"
             >
-                <SwiperSlide><img src="/assets/images/images_1.jpg" alt="libray" style={{
+                <SwiperSlide><img src="/assets/images/images_1.png" alt="libray" style={{
                     width: "100%",
                     height: "100vh",
                     objectFit: "cover",
                 }} /></SwiperSlide>
-                <SwiperSlide><img src="/assets/images/images_2" alt="libray" style={{
+                <SwiperSlide><img src="/assets/images/images_2.png" alt="libray" style={{
                     width: "100%",
                     height: "100vh",
                     objectFit: "cover",
                 }} /></SwiperSlide>
-                <SwiperSlide><img src="/assets/images/images_3.jpg" alt="libray" style={{
+                <SwiperSlide><img src="/assets/images/image_3.png" alt="libray" style={{
                     width: "100%",
                     height: "100vh",
                     objectFit: "cover",

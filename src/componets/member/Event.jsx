@@ -19,7 +19,7 @@ const events = [
     {
         id: 1,
         title: "Summer Reading Club",
-        image: "/assets/images/summer_reading.jpeg",
+        image: "/assets/images/summer-club.png",
         date: "15 July 2026",
         time: "10:00 AM",
         location: "Main Reading Hall",
@@ -29,7 +29,7 @@ const events = [
     {
         id: 2,
         title: "Storytelling for Kids",
-        image: "/assets/images/story_telling",
+        image: "/assets/images/story-telling.png",
         date: "20 July 2026",
         time: "4:00 PM",
         location: "Kids Corner",
@@ -39,7 +39,7 @@ const events = [
     {
         id: 3,
         title: "Meet the Author",
-        image: "/assets/images/author_meetup.png",
+        image: "/assets/images/author-meet.png",
         date: "28 July 2026",
         time: "11:00 AM",
         location: "Conference Hall",
@@ -50,17 +50,17 @@ const events = [
 
 function Event(props) {
     return (
-        <Box sx={{ py: 10 }}>
+        <Box sx={{ py: 11 }}>
             <Container maxWidth="lg">
 
                 {/* Heading */}
 
                 <Typography
-                    color="warning.main"
+                    fontSize="30"
                     fontWeight="bold"
                     textAlign="center"
                 >
-                    OUR EVENTS
+                   Event's of Buzz
                 </Typography>
 
                 <Typography
@@ -69,7 +69,7 @@ function Event(props) {
                     textAlign="center"
                     mt={2}
                 >
-                    Explore Upcoming Library Events
+                    "Discover What's Happening Inside BookBuzz"
                 </Typography>
 
                 <Typography
@@ -89,6 +89,7 @@ function Event(props) {
                         <Grid size={{ xs: 12, md: 4 }} key={event.id}>
                             <Card
                                 sx={{
+                                    mt: 3,
                                     borderRadius: 3,
                                     boxShadow: 3,
                                     transition: ".3s",
@@ -166,8 +167,9 @@ function Event(props) {
 
                                     <Button
                                         variant="contained"
-                                        sx={{ mt: 3,
-                                            bgcolor:'#f7c600'
+                                        sx={{
+                                            mt: 3,
+                                            bgcolor: '#f7c600'
                                         }}
                                     >
                                         Learn More

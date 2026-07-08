@@ -6,8 +6,9 @@ import ManageMember from './pages/admin/ManageMember';
 import Home from './pages/member/Home';
 import About from './componets/member/About';
 import Event from './componets/member/Event';
-import MyBook from './pages/member/MyBook';
+import MyBook from './pages/member/MyBooks';
 import Login from './pages/common/Login';
+import Error from './pages/common/Error';
 
 function App(props) {
   return (
@@ -23,6 +24,7 @@ function App(props) {
         <Route path='/book' element={<ManageBook />} />
         <Route path='/member' element={<ManageMember />} />
         <Route path='/login' element={<Login/>}/>
+        <Route path="*" element={<Error/>}/>
       </Routes>
     </BrowserRouter>
   );

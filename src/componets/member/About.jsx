@@ -15,7 +15,7 @@ import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 function About(props) {
     return (
         <Box sx={{
-            py: 10,
+            py: 11,
             mx: 10
         }}>
             <Container maxWidth="lg">
@@ -24,7 +24,7 @@ function About(props) {
                     {/* Left Image */}
                     <Grid size={{ xs: 12, md: 6 }}>
                         <img
-                            src="/assets/images/images_3.jpg"
+                            src="/assets/images/about.png"
                             alt="Library"
                             style={{
                                 width: "100%",

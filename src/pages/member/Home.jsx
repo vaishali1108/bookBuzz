@@ -28,10 +28,11 @@ function Home(props) {
         <Event />
       </section>
 
-
       <section id="contact">
         <Footer />
       </section>
+
+      
     </>
   );
 }

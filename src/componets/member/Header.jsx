@@ -17,7 +17,6 @@ const Header = () => {
         { name: "ABOUT", id: "about" },
         { name: "EVENTS", id: "events" },
         { name: "CONTACT", id: "contact" },
-        { name: "BOOKs", id: "mybooks" },
     ];
 
     return (
@@ -27,7 +26,7 @@ const Header = () => {
                 background: "rgba(0,0,0,0.7)",
                 backdropFilter: "blur(8px)",
                 boxShadow: "none",
-                
+
             }}
 
         >
@@ -87,6 +86,20 @@ const Header = () => {
                                 {item.name}
                             </Button>
                         ))}
+                        <Button
+                        component={Link}
+                        to="/books"
+                        sx={{
+                            color: "white",
+                            fontWeight: 500,
+                            "&:hover": {
+                                color: "#f7c600",
+                                backgroundColor: "transparent",
+                            },
+                        }}
+                    >
+                        BOOKS
+                    </Button>
                     </Stack>
 
                     <Button
@@ -97,6 +110,9 @@ const Header = () => {
                         }} variant="contained">
                         Login
                     </Button>
+
+                    
+
 
                     {/* Profile */}
                     {/* 
